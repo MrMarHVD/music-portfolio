@@ -6,6 +6,7 @@ import { VToolbar, VTabs, VTab } from 'vuetify/components'
 <template>
   <v-toolbar color="secondary">
     <v-tabs>
+      <v-tab>Welcome</v-tab>
       <v-tab>Portfolio</v-tab>
       <v-tab>About</v-tab>
       <v-tab>Contact</v-tab>

@@ -1,10 +1,11 @@
 <script setup>
   import MainPage from './components/MainPage.vue'
   import Toolbar from './components/Toolbar.vue'
+  import '@/assets/images/background/background1.webp'
   </script>
 
   <template>
-    <div class="verticalContainer" >
+    <div class="mainContainer" >
       <Toolbar />
       <MainPage />
     </div>
@@ -14,9 +15,11 @@
   <style scoped>
   /* Add any styles if needed */
 
-  .verticalContainer {
+  .mainContainer {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-image: url(@/assets/images/background/background1.webp);
+    background-size: cover;
   }
   </style>

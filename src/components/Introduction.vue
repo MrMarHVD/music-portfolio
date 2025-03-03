@@ -1,14 +1,19 @@
 <script setup>
-import { VContainer, VTextField, VCard, VCardText } from 'vuetify/components'
+import { VContainer, VTextField, VCard, VCardText, VImg } from 'vuetify/components'
 import '@/assets/global.css'
+
+const meImageUrl = new URL('@/assets/images/other/mephoto.JPG', import.meta.url).href;
+
 </script>
 
 <template>
   <v-container>
     <v-card>
       <v-card-text class="center-content">
-        <h1>Introduction</h1>
+        <h1>Welcome!</h1>
+        <v-img id="meImage" :src="meImageUrl" alt=""></v-img>
       </v-card-text>
+
         <v-card-text>
           <div class="info-box">
             Hello, and welcome to my portfolio! I'm a hobby composer, and you'll find some of my work below. Go to the "About"-page if you want to know more about me and the
@@ -30,6 +35,11 @@ v-card {
 
 v-text-field {
   width: 100%;
+}
+
+#meImage {
+  width: 70%;
+  height: auto;
 }
 
 

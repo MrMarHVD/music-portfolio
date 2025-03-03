@@ -6,9 +6,12 @@
 
   <template>
     <div class="mainContainer" >
-      <Toolbar />
-      <MainPage />
+      <Toolbar class="fixed-toolbar" />
+      <div class="scrollable-content">
+       <MainPage />
+      </div>
     </div>
+
 
   </template>
 
@@ -21,5 +24,12 @@
     height: 100vh;
     background-image: url(@/assets/images/background/background1.webp);
     background-size: cover;
+  }
+
+  .fixed-toolbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other content */
   }
   </style>

@@ -8,7 +8,6 @@ import { VToolbar, VTabs, VTab } from 'vuetify/components'
     <v-tabs>
       <v-tab>Welcome</v-tab>
       <v-tab>Portfolio</v-tab>
-      <v-tab>About</v-tab>
       <v-tab>Contact</v-tab>
     </v-tabs>
   </v-toolbar>

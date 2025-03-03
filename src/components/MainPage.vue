@@ -1,7 +1,7 @@
 <script setup>
 import { VContainer, VCard, VCardText } from 'vuetify/components'
 import Introduction from './Introduction.vue'
-import MusicPortfolio from './MusicPortfolio.vue'
+import MusicSample from './MusicSample.vue'
 import ContactFooter from './ContactFooter.vue'
 import '@/assets/global.css'
 </script>
@@ -11,7 +11,7 @@ import '@/assets/global.css'
   <v-container class="backdrop content-container">
    <Introduction />
     <!-- Add more cards as needed -->
-    <MusicPortfolio />
+    <MusicSample />
     <ContactFooter />
   </v-container>
 </template>

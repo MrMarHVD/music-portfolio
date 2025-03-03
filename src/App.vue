@@ -2,6 +2,8 @@
   import MainPage from './components/MainPage.vue'
   import Toolbar from './components/Toolbar.vue'
   import '@/assets/images/background/background1.webp'
+  import ContactFooter from "@/components/ContactFooter.vue";
+  import { VContainer, VCard } from 'vuetify/components'
   </script>
 
   <template>
@@ -10,6 +12,7 @@
       <div class="scrollable-content">
        <MainPage />
       </div>
+
     </div>
 
 
@@ -24,6 +27,10 @@
     height: 100vh;
     background-image: url(@/assets/images/background/background1.webp);
     background-size: cover;
+  }
+
+  .fullWidthContainer {
+    width: 5000px;
   }
 
   .fixed-toolbar {

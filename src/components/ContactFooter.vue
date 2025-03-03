@@ -25,7 +25,7 @@ import '@/assets/global.css'
 .social-media-links {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 50px;
 }
 .social-btn {
   width: 10vw;

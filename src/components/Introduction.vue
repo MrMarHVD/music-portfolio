@@ -3,12 +3,13 @@ import { VContainer, VTextField, VCard, VCardText, VImg } from 'vuetify/componen
 import '@/assets/global.css'
 
 const meImageUrl = new URL('@/assets/images/other/mephoto.JPG', import.meta.url).href;
+const backgroundUrl = new URL('@/assets/images/background/Notes_background.jpg1', import.meta.url).href;
 
 </script>
 
 <template>
   <v-container>
-    <v-card>
+    <v-card class="musicNoteBG">
       <v-card-text class="center-content">
         <h1>Welcome!</h1>
         <v-img id="meImage" :src="meImageUrl" alt=""></v-img>
@@ -16,8 +17,7 @@ const meImageUrl = new URL('@/assets/images/other/mephoto.JPG', import.meta.url)
 
         <v-card-text>
           <div class="info-box">
-            Hello, and welcome to my portfolio! I'm a hobby composer, and you'll find some of my work below. Go to the "About"-page if you want to know more about me and the
-            types of projects I'd especially love to work on. Or you could just listen to some of the sample tracks below.
+            Hello, and welcome to my portfolio! I'm a hobby composer always excited for new projects. Below is a sample if you want a quick impression of the type of stuff I make. Have a look at the PORTFOLIO tab above for more. ☝️
           </div>
       </v-card-text>
     </v-card>
@@ -29,9 +29,6 @@ h1 {
   margin-bottom: 16px;
 }
 
-v-card {
-  padding: 16px;
-}
 
 v-text-field {
   width: 100%;

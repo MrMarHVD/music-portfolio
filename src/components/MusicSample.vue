@@ -22,18 +22,24 @@ const soundFiles = [
 
 <template>
   <v-container>
-    <audio controls class="custom-audio">
-      <source src="@/assets/music/Maple_Forest_Walk.flac" type="audio/flac" />
-      Your browser does not support the audio element.
-    </audio>
+  <v-card>
+    <v-container class="center-content">
+      <h2>Music Sample</h2>
+      <audio controls class="custom-audio">
+        <source src="@/assets/music/Maple_Forest_Walk.flac" type="audio/flac" />
+        Your browser does not support the audio element.
+      </audio>
+    </v-container>
+  </v-card>
   </v-container>
 </template>
 
 <style scoped>
-h1 {
+h2 {
   margin-bottom: 16px;
+  font-size: 25pt;
+  font-family: Trattatello;
 }
-
 
 
 .mb-4 {

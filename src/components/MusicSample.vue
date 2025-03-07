@@ -16,8 +16,6 @@ const soundFiles = [
 
 <script>
 
-
-
 </script>
 
 <template>

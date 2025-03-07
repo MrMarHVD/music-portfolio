@@ -5,6 +5,7 @@ import MusicSample from './MusicSample.vue'
 import ContactFooter from './ContactFooter.vue'
 import '@/assets/global.css'
 import ProjectOverview from './ProjectOverview.vue'
+import GhostOfYou from './GhostOfYou.vue'
 </script>
 
 <template>
@@ -12,12 +13,15 @@ import ProjectOverview from './ProjectOverview.vue'
   <v-container class="backdrop content-container">
     <!-- <PortfolioIntro > -->
     <!-- <GhostOfYou > -->
-    <ProjectOverview
+<!--    <ProjectOverview
         backgroundUrl="@/assets/images/background/Notes_background.jpg"
         headerText="My Custom Project"
         contentText="This is a custom block of text for the project overview."
         :musicTracks="[]"
-    />
+        foregroundImageUrl="@/assets/images/other/tumtumworlds.jpg"
+    /> -->
+    <GhostOfYou />
+
     <!-- <Project2 > -->
     <!-- Add more cards as needed -->
   </v-container>

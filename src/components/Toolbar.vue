@@ -1,4 +1,4 @@
-<script setup>
+<script setup xmlns="http://www.w3.org/1999/html">
 import { VToolbar, VTabs, VTab } from 'vuetify/components'
 
 </script>
@@ -6,9 +6,15 @@ import { VToolbar, VTabs, VTab } from 'vuetify/components'
 <template>
   <v-toolbar color="secondary">
     <v-tabs>
-      <v-tab>Welcome</v-tab>
-      <v-tab>Portfolio</v-tab>
-      <v-tab>Contact</v-tab>
+      <v-tab>
+        <router-link to="/">Welcome</router-link>
+      </v-tab>
+      <v-tab>
+        <router-link to="/portfolio">Portfolio</router-link>
+      </v-tab>
+      <v-tab>
+      <router-link to="/contact">Contact</router-link>
+      </v-tab>
     </v-tabs>
   </v-toolbar>
 </template>

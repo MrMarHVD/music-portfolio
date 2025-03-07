@@ -11,7 +11,7 @@
     <div class="mainContainer" >
       <Toolbar class="fixed-toolbar" />
       <div class="scrollable-content">
-       <!-- <MainPage /> -->
+     <!--   <MainPage /> -->
        <router-view />
       </div>
 

@@ -4,13 +4,15 @@
   import '@/assets/images/background/background1.webp'
   import ContactFooter from "@/components/ContactFooter.vue";
   import { VContainer, VCard } from 'vuetify/components'
+
   </script>
 
   <template>
     <div class="mainContainer" >
       <Toolbar class="fixed-toolbar" />
       <div class="scrollable-content">
-       <MainPage />
+       <!-- <MainPage /> -->
+       <router-view />
       </div>
 
     </div>

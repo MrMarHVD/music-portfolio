@@ -6,6 +6,7 @@ import ContactFooter from './ContactFooter.vue'
 import '@/assets/global.css'
 import ProjectOverview from './ProjectOverview.vue'
 import GhostOfYou from './GhostOfYou.vue'
+import MusicTrack from './MusicTrack.vue'
 </script>
 
 <template>
@@ -21,6 +22,21 @@ import GhostOfYou from './GhostOfYou.vue'
         foregroundImageUrl="@/assets/images/other/tumtumworlds.jpg"
     /> -->
     <GhostOfYou />
+   <MusicTrack
+       trackTitle="My Custom Music Track"
+       trackSrc="/music/Maple_Forest_Walk.flac"
+       trackType="audio/flac"
+   />
+    <MusicTrack
+        trackTitle="My Custom Music Track"
+        trackSrc="/music/Maple_Forest_Walk.flac"
+        trackType="audio/flac"
+    />
+    <MusicTrack
+        trackTitle="My Custom Music Track"
+        trackSrc="/music/Maple_Forest_Walk.flac"
+        trackType="audio/flac"
+    />
 <!--    <ProjectOverview
         imageUrl="/assets/images/other/tumtumworlds.jpg"
         headerText="My Custom Project"

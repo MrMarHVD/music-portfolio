@@ -4,12 +4,16 @@
 .custom-audio {
   width: 50vw;
   transform: scale(1.5);
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
+}
+
+.marginContainer {
+  margin: 10px;
 }
 
 .info-box {
@@ -19,7 +23,7 @@
   border-radius: 4px;
   font-size: 20pt;
 
-}
+ }
 
 .center-content {
   display: flex;

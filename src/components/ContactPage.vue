@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { VContainer, VCard, VCardText, VTextField, VBtn } from 'vuetify/components'
 
-const email = ref('example@example.com')
+const email = ref('profdrmrmar@gmail.com')
 
 const copyToClipboard = () => {
   navigator.clipboard.writeText(email.value)
@@ -20,7 +20,7 @@ const copyToClipboard = () => {
             label="Email"
             readonly
         />
-        <v-btn @click="copyToClipboard">Copy</v-btn>
+        <v-btn id="contactMeButton" @click="copyToClipboard">Copy</v-btn>
       </v-card-text>
     </v-card>
   </v-container>
@@ -45,6 +45,11 @@ const copyToClipboard = () => {
   margin-bottom: 20px;
 }
 
+#contactMeButton {
+  width: 300px;
+  height: 60px;
+}
+
 .contact-card {
   width: 40vw;
   text-align: center;
@@ -55,6 +60,8 @@ const copyToClipboard = () => {
   flex-direction: column;
   gap: 10px;
   align-items: stretch;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Ensure the text field takes up all available width */

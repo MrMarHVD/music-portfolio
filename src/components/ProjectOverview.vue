@@ -7,8 +7,10 @@ const props = defineProps({
   contentText: String
 })
 
+const resolvedImageUrl = new URL(props.imageUrl, import.meta.url).href;
+
 const backgroundImageStyle = {
-  backgroundImage: `url('@/assets/images/background/Notes_background.jpg1')`
+  backgroundImage: `url(${new URL('@/assets/images/background/Notes_background.jpg', import.meta.url).href})`
 }
 </script>
 
@@ -17,7 +19,7 @@ const backgroundImageStyle = {
     <v-card :style="backgroundImageStyle" class="musicNoteBG">
       <v-card-text class="center-content">
         <h2>{{ headerText }}</h2>
-        <v-img :src="imageUrl" alt="Foreground Image" />
+        <v-img :src="resolvedImageUrl" alt="Foreground Image" />
       </v-card-text>
       <v-card-text>
         <div class="info-box">
@@ -34,16 +36,4 @@ h2 {
   font-size: 25pt;
   font-family: Trattatello;
 }
-
-
-v-text-field {
-  width: 100%;
-}
-
-#tumtumImage {
-  width: 50%;
-  height: auto;
-}
-
-
 </style>

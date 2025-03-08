@@ -21,7 +21,11 @@ import GhostOfYou from './GhostOfYou.vue'
         foregroundImageUrl="@/assets/images/other/tumtumworlds.jpg"
     /> -->
     <GhostOfYou />
-
+<!--    <ProjectOverview
+        imageUrl="/assets/images/other/tumtumworlds.jpg"
+        headerText="My Custom Project"
+        contentText="This is a custom block of text for the project overview."
+    /> -->
     <!-- <Project2 > -->
     <!-- Add more cards as needed -->
   </v-container>

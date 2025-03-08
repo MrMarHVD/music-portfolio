@@ -19,6 +19,7 @@ import '@/assets/global.css'
 <style scoped>
 v-container {
   height: 100vh;
+  width: 100vw;
   overflow-y: auto;
 }
 

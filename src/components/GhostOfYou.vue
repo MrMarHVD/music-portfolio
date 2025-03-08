@@ -17,7 +17,9 @@ const backgroundUrl = new URL('@/assets/images/background/Notes_background.jpg1'
 
       <v-card-text>
         <div class="info-box">
+          <body>
          The only collaborative project I'm working on at the moment is called Ghost of You. It's a visual novel, and part of the score is mostly done already. Some of the tracks are provided below.
+          </body>
         </div>
       </v-card-text>
     </v-card>
@@ -35,9 +37,8 @@ v-text-field {
 }
 
 #tumtumImage {
-  width: 50%;
+  width: 30%;
   height: auto;
 }
-
 
 </style>

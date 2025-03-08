@@ -28,6 +28,7 @@ import GhostOfYou from './GhostOfYou.vue'
     /> -->
     <!-- <Project2 > -->
     <!-- Add more cards as needed -->
+    <ContactFooter />
   </v-container>
 </template>
 

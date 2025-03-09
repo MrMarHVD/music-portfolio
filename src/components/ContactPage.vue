@@ -13,6 +13,9 @@ const copyToClipboard = () => {
   <v-container class="contact-container">
     <h1 class="contact-header">Contact me</h1>
     <v-card class="contact-card">
+      <body>If you think you might want to work with me on a project, send me an email or hit me up on Discord!</body>
+    </v-card>
+    <v-card class="contact-card">
       <v-card-text class="email-card">
         <v-text-field
             class="email-field"
@@ -39,10 +42,12 @@ const copyToClipboard = () => {
   background-position: center; */
 }
 
+
 .contact-header {
   background-color: white;
   padding: 10px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  border-radius: 5px;
 }
 
 #contactMeButton {
@@ -52,7 +57,9 @@ const copyToClipboard = () => {
 
 .contact-card {
   width: 40vw;
+  padding: 20px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .email-card {

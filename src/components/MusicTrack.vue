@@ -22,11 +22,13 @@ const resolvedTrackSrc = computed(() => {
   <v-container >
   <v-card class="musicCard">
     <v-card-text class="center-content">
+      <v-container class="medium-padding">
       <h2>{{ trackTitle }}</h2>
       <audio controls class="custom-audio">
         <source :src="resolvedTrackSrc" :type="trackType" />
         Your browser does not support the audio element.
       </audio>
+      </v-container>
     </v-card-text>
   </v-card>
   </v-container>
@@ -41,7 +43,6 @@ const resolvedTrackSrc = computed(() => {
   justify-content: center;
   text-align: center;
   /* Optional: set a fixed height if vertical centering is desired */
-  height: 150px;
 
 }
 

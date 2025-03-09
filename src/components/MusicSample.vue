@@ -21,7 +21,7 @@ const soundFiles = [
 <template>
   <v-container>
   <v-card>
-    <v-container class="center-content">
+    <v-container class="lotsOfPadding center-content">
       <h2>Music Sample</h2>
       <audio controls class="custom-audio">
         <source src="@/assets/music/Maple_Forest_Walk.flac" type="audio/flac" />
@@ -33,6 +33,8 @@ const soundFiles = [
 </template>
 
 <style scoped>
+
+
 h2 {
   margin-bottom: 16px;
   font-size: 25pt;

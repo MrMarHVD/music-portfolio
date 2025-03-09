@@ -91,6 +91,12 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 30pt;
+  font-family: Inter;
+  font-weight: bold;
+}
+
 body {
   font-family: Academico;
   font-size: 25pt;

@@ -36,7 +36,6 @@ const copyToClipboard = () => {
   align-items: center;
   justify-content: center;
   height: 93vh;
-  width: 100vw;
   /*background-image: url('@/assets/images/background/Notes_background.jpg');
   background-size: cover;
   background-position: center; */

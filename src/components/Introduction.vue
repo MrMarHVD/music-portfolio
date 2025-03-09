@@ -17,7 +17,7 @@ const backgroundUrl = new URL('@/assets/images/background/Notes_background.jpg1'
 
         <v-card-text>
           <div class="info-box">
-            <body>Hello, and welcome to my portfolio! I'm a hobby composer always excited for new projects. Below is a sample if you want a quick impression of the type of stuff I make. Have a look at the PORTFOLIO tab above for more. ☝</body>️
+            <body>Hello, and welcome to my portfolio! I'm a hobby composer always excited for new projects, with a special interest in scoring video games. Below is a sample if you want a quick impression of the type of stuff I like to make at the moment. Have a look at the PORTFOLIO tab above for more. ☝</body>️
           </div>
       </v-card-text>
     </v-card>

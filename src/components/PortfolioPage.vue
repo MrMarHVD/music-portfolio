@@ -7,6 +7,7 @@ import '@/assets/global.css'
 import ProjectOverview from './ProjectOverview.vue'
 import GhostOfYou from './GhostOfYou.vue'
 import MusicTrack from './MusicTrack.vue'
+import OtherWork from './OtherWork.vue'
 </script>
 
 <template>
@@ -23,9 +24,10 @@ import MusicTrack from './MusicTrack.vue'
     /> -->
     <GhostOfYou />
    <MusicTrack
-       trackTitle="My Custom Music Track"
+       trackTitle="Purgatory_daytime"
        trackSrc="/music/Maple_Forest_Walk.flac"
        trackType="audio/flac"
+       bgImageUrl="/images/purgatorylobby.jpeg"
    />
     <MusicTrack
         trackTitle="My Custom Music Track"
@@ -44,6 +46,18 @@ import MusicTrack from './MusicTrack.vue'
     /> -->
     <!-- <Project2 > -->
     <!-- Add more cards as needed -->
+
+    <OtherWork />
+    <MusicTrack
+        trackTitle="My Custom Music Track"
+        trackSrc="/music/Maple_Forest_Walk.flac"
+        trackType="audio/flac"
+    />
+    <MusicTrack
+        trackTitle="My Custom Music Track"
+        trackSrc="/music/Maple_Forest_Walk.flac"
+        trackType="audio/flac"
+    />
     <ContactFooter />
   </v-container>
 </template>

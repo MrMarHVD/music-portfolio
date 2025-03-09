@@ -7,7 +7,7 @@ import { VToolbar, VTabs, VTab } from 'vuetify/components'
   <v-toolbar color="secondary">
     <v-tabs>
       <v-tab>
-        <router-link to="/">Welcome</router-link>
+        <router-link to="/">Home</router-link>
       </v-tab>
       <v-tab>
         <router-link to="/portfolio">Portfolio</router-link>

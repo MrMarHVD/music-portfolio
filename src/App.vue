@@ -29,6 +29,7 @@
     height: 100vh;
     background-image: url(@/assets/images/background/background1.webp);
     background-size: cover;
+    align-items: center;
   }
 
   .fullWidthContainer {

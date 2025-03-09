@@ -1,5 +1,5 @@
 <script setup>
-import { VContainer, VCard, VCardText } from 'vuetify/components'
+import { VContainer, VCard, VCardText, VDivider } from 'vuetify/components'
 import Introduction from './Introduction.vue'
 import MusicSample from './MusicSample.vue'
 import ContactFooter from './ContactFooter.vue'
@@ -7,6 +7,7 @@ import '@/assets/global.css'
 import ProjectOverview from './ProjectOverview.vue'
 import GhostOfYou from './GhostOfYou.vue'
 import MusicTrack from './MusicTrack.vue'
+import MusicTrackWithInfo from "@/components/MusicTrackWithInfo.vue";
 import OtherWork from './OtherWork.vue'
 </script>
 
@@ -39,6 +40,7 @@ import OtherWork from './OtherWork.vue'
         trackSrc="/music/Maple_Forest_Walk.flac"
         trackType="audio/flac"
     />
+    <v-divider class="custom-divider"></v-divider>
 <!--    <ProjectOverview
         imageUrl="/assets/images/other/tumtumworlds.jpg"
         headerText="My Custom Project"
@@ -58,6 +60,14 @@ import OtherWork from './OtherWork.vue'
         trackSrc="/music/Maple_Forest_Walk.flac"
         trackType="audio/flac"
     />
+    <MusicTrackWithInfo
+        trackTitle="Title"
+        trackSrc="/music/Maple_Forest_Walk.flac"
+        trackType="audio/flac"
+        bgImageUrl="/images/purgatorylobby.jpeg"
+        trackInfo="Info bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bl bla bla bla bla bla bal bla bla bla bla bla bla l"
+    />
+
     <ContactFooter />
   </v-container>
 </template>

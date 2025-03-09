@@ -3,9 +3,16 @@ import { ref } from 'vue'
 import { VContainer, VCard, VCardText, VTextField, VBtn } from 'vuetify/components'
 
 const email = ref('profdrmrmar@gmail.com')
+const discord = ref('mistermar')
 
-const copyToClipboard = () => {
+// Copy email to the clipboard
+const copyEmailtoClipboard = () => {
   navigator.clipboard.writeText(email.value)
+}
+
+// Copy Discord to the clipboard
+const copyDiscordtoClipboard = () => {
+  navigator.clipboard.writeText(discord.value)
 }
 </script>
 
@@ -23,7 +30,18 @@ const copyToClipboard = () => {
             label="Email"
             readonly
         />
-        <v-btn id="contactMeButton" @click="copyToClipboard">Copy</v-btn>
+        <v-btn id="contactMeButton" @click="copyEmailtoClipboard">Copy</v-btn>
+      </v-card-text>
+    </v-card>
+    <v-card class="contact-card">
+      <v-card-text class="email-card">
+        <v-text-field
+            class="email-field"
+            v-model="discord"
+            label="Discord"
+            readonly
+        />
+        <v-btn id="contactMeButton" @click="copyDiscordtoClipboard">Copy</v-btn>
       </v-card-text>
     </v-card>
   </v-container>
@@ -73,11 +91,13 @@ const copyToClipboard = () => {
 /* Ensure the text field takes up all available width */
 .email-field {
   width: 100%;
+  align-items: center;
 }
 
 /* Increase the font size of the inner input */
 ::v-deep .email-field input {
   font-size: 26pt !important;
+  align-items: center;
 }
 
 /* Optionally, adjust the label font size if needed */

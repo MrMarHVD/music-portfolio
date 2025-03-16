@@ -49,7 +49,8 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
     /> -->
     <!-- <Project2 > -->
     <!-- Add more cards as needed -->
-
+  </v-container>
+  <v-container class="backdrop content-container">
     <OtherWork />
     <v-card-text class="center-content">
       <h3 class="header-background">Orchestral</h3>
@@ -126,6 +127,7 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
     </v-container>
 
     <ContactFooter />
+
   </v-container>
 </template>
 
@@ -144,8 +146,10 @@ v-container {
 .content-container {
   border-radius: 4vh;
   margin-top: 1vh;
-  margin-bottom: 10vh;
+  margin-bottom: 1vh;
 }
+
+
 
 
 </style>

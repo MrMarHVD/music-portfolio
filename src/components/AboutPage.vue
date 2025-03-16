@@ -13,6 +13,7 @@ import AboutMeBlock from "@/components/AboutMeBlock.vue";
 
   <v-container class="backdrop content-container">
    <AboutMeBlock  />
+    <ContactFooter />
   </v-container>
 </template>
 
@@ -24,7 +25,10 @@ v-container {
 }
 
 .content-container {
-  margin-top: 0px;
+  margin-top: 1vh;
+  border-radius: 4vh;
+  margi-text-outline: 1vh;
+  margin-bottom: 10vh;
 }
 
 

@@ -24,7 +24,10 @@ v-container {
 }
 
 .content-container {
-  margin-top: 0px;
+  margin-top: 1vh;
+  border-radius: 4vw;
+  margin-top: 1vh;
+  margin-bottom: 10vh;
 }
 
 

@@ -4,7 +4,7 @@ import { VToolbar, VTabs, VTab } from 'vuetify/components'
 </script>
 
 <template>
-  <v-toolbar color="secondary">
+  <v-toolbar class="toolbar" color="lightgrey">
     <v-tabs>
       <v-tab>
         <router-link to="/">Home</router-link>
@@ -23,5 +23,10 @@ import { VToolbar, VTabs, VTab } from 'vuetify/components'
 </template>
 
 <style scoped>
+
+.toolbar {
+  border-bottom: 10px;
+  border-color: black;
+}
 /* Add any styles if needed */
 </style>

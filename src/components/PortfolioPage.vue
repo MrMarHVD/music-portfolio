@@ -142,7 +142,9 @@ v-container {
 }
 
 .content-container {
-  margin-top: 0px;
+  border-radius: 4vh;
+  margin-top: 1vh;
+  margin-bottom: 10vh;
 }
 
 

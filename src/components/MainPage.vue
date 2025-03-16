@@ -27,7 +27,7 @@ v-container {
   margin-top: 1vh;
   border-radius: 4vw;
   margin-top: 1vh;
-  margin-bottom: 10vh;
+  margin-bottom: 1vh;
 }
 
 

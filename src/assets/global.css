@@ -118,6 +118,13 @@ v-card {
   padding: 16px;
 }
 
+.centered {
+  display: flex;
+  align-items: center;
+  flex-display: column;
+  justify-content: center;
+}
+
 .musicNoteBG::before {
   content: "";
   position: absolute;

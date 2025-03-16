@@ -99,6 +99,30 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
           trackInfo="This is a bit of a wild one. I was just getting into using 8bit sounds in my music and wanted to create a boss theme. It's rather eccentric and very busy, but not my worst work."
       />
 
+
+
+    </v-container>
+
+    <v-card-text class="center-content">
+      <h3 class="header-background">Experimental</h3>
+    </v-card-text>
+    <v-container class="bordered-container">
+
+
+      <MusicTrackWithInfo
+          trackTitle="Fiat Lux"
+          trackSrc="/music/Maple_Forest_Walk.flac"
+          trackType="audio/flac"
+          bgImageUrl="/images/purgatorylobby.jpeg"
+          trackInfo="This one is based on an idea, namely the quote 'Let there be light,' as supposedly spoken by God. I tried to imagine what that would sound like, and this is the result."
+      />
+
+      <MusicTrack
+          trackTitle="Changing Heart"
+          trackSrc="/music/Maple_Forest_Walk.flac"
+          trackType="audio/flac"
+      />
+
     </v-container>
 
     <ContactFooter />

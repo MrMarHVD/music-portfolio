@@ -13,6 +13,9 @@ import { VToolbar, VTabs, VTab } from 'vuetify/components'
         <router-link to="/portfolio">Portfolio</router-link>
       </v-tab>
       <v-tab>
+        <router-link to="/about">About</router-link>
+      </v-tab>
+      <v-tab>
       <router-link to="/contact">Contact</router-link>
       </v-tab>
     </v-tabs>

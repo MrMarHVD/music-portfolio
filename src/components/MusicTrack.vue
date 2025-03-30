@@ -33,20 +33,18 @@ const cardStyle = computed(() => {
       : {}
 })
 
-const audio = ref(null);
 
-onMounted(() => {
-  audio.value = new Audio(resolvedTrackSrc.value)
-  audio.value.addEventListener('play', () => {
-    isPlaying.value = true
-  })
-  audio.value.addEventListener('pause', () => {
-    isPlaying.value = false
-  })
-  audio.value.addEventListener('ended', () => {
-    isPlaying.value = false
-  })
-})
+function onPlay() {
+  isPlaying.value = true;
+}
+
+function onPause() {
+  isPlaying.value = false;
+}
+
+function onEnded() {
+  isPlaying.value = false;
+}
 
 
 </script>
@@ -59,7 +57,11 @@ onMounted(() => {
           <h2 class="header-background">{{ trackTitle }}</h2>
           <v-container class="medium-padding">
 
-            <audio controls class="custom-audio">
+            <audio controls
+                   @play="onPlay"
+                   @pause="onPause"
+                   @ended="onEnded"
+                   class="custom-audio">
               <source :src="resolvedTrackSrc" :type="trackType" />
               Your browser does not support the audio element.
             </audio>

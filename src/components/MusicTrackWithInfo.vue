@@ -1,5 +1,5 @@
 <script setup>
-import { defineProps, computed } from 'vue'
+import { defineProps, computed, ref } from 'vue'
 import { VCard, VCardText, VContainer } from 'vuetify/components'
 import '@/assets/global.css'
 
@@ -12,6 +12,8 @@ const props = defineProps({
   // New prop for the additional text information
   trackInfo: { type: String, default: '' }
 })
+
+const isPlaying = ref(false);
 
 // Resolve the audio URL using the Vite base URL
 const resolvedTrackSrc = computed(() => {
@@ -29,9 +31,21 @@ const resolvedBgImageUrl = computed(() => {
 // Use a CSS variable to pass the background image URL to the pseudo-element.
 const cardStyle = computed(() => {
   return resolvedBgImageUrl.value
-      ? { '--bg-image': `url(${resolvedBgImageUrl.value})` }
+      ? { '--bg-image': `url(${resolvedBgImageUrl.value})`, '--bg-opacity': isPlaying.value ? 1 : 0.5 }
       : {}
 })
+
+function onPlay() {
+  isPlaying.value = true;
+}
+
+function onPause() {
+  isPlaying.value = false;
+}
+
+function onEnded() {
+  isPlaying.value = false;
+}
 </script>
 
 <template>
@@ -46,7 +60,12 @@ const cardStyle = computed(() => {
             <v-card-text>
             <h2 class="header-background">{{ trackTitle }}</h2>
             </v-card-text>
-            <audio controls class="custom-audio-small">
+            <audio
+              controls
+              class="custom-audio-small"
+              @play="onPlay"
+              @pause="onPause"
+              @ended="onEnded">
               <source :src="resolvedTrackSrc" :type="trackType" />
               Your browser does not support the audio element.
             </audio>
@@ -61,7 +80,6 @@ const cardStyle = computed(() => {
 </template>
 
 <style scoped>
-
 .marginRight {
   margin-right: 30px;
 }
@@ -85,7 +103,7 @@ const cardStyle = computed(() => {
   background: var(--bg-image, none);
   background-size: cover;
   background-position: center;
-  opacity: 1;       /* Adjust opacity as desired */
+  opacity: var(--bg-opacity, 0.5);
   z-index: -2;
 }
 

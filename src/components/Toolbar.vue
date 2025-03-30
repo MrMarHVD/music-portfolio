@@ -12,9 +12,9 @@
           <router-link to="/portfolio" class="tab-link">
             <v-tab class="flex-tab">Portfolio</v-tab>
           </router-link>
-          <router-link to="/about" class="tab-link">
+          <!-- <router-link to="/about" class="tab-link">
             <v-tab class="flex-tab">About</v-tab>
-          </router-link>
+          </router-link>  -->
           <router-link to="/contact" class="tab-link">
             <v-tab class="flex-tab">Contact</v-tab>
           </router-link>

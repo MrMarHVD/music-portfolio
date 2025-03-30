@@ -2,7 +2,7 @@
 import { VContainer, VTextField, VCard, VCardText, VImg } from 'vuetify/components'
 import '@/assets/global.css'
 
-const meImageUrl = new URL('@/assets/images/other/mephoto.JPG', import.meta.url).href;
+const meImageUrl = new URL('/images/aristocat.png', import.meta.url).href;
 const backgroundUrl = new URL('@/assets/images/background/Notes_background.jpg1', import.meta.url).href;
 
 </script>
@@ -17,7 +17,7 @@ const backgroundUrl = new URL('@/assets/images/background/Notes_background.jpg1'
 
         <v-card-text>
           <div class="info-box">
-            <body>Hello, and welcome to my portfolio! I'm a hobby composer always excited for new projects, with a special interest in scoring video games. Below is a sample if you want a quick impression of the type of stuff I like to make at the moment. Have a look at the PORTFOLIO tab above for more. ☝</body>️
+            <body>Hello! I'm MrMar and welcome to my portfolio! I'm a hobby composer always excited for new projects, with a special interest in scoring video games. Below is a sample if you want a quick impression of the type of stuff I like to make at the moment. Have a look at the PORTFOLIO tab above for more. ☝</body>️
           </div>
       </v-card-text>
     </v-card>
@@ -35,8 +35,9 @@ v-text-field {
 }
 
 #meImage {
-  width: 50%;
+  width: 30%;
   height: auto;
+  border-radius: 10vw;
 }
 
 

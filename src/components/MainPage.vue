@@ -3,6 +3,7 @@ import { VContainer, VCard, VCardText } from 'vuetify/components'
 import Introduction from './Introduction.vue'
 import MusicSample from './MusicSample.vue'
 import ContactFooter from './ContactFooter.vue'
+import MusicTrack from './MusicTrack.vue'
 import '@/assets/global.css'
 </script>
 
@@ -11,7 +12,13 @@ import '@/assets/global.css'
   <v-container class="backdrop content-container">
    <Introduction />
     <!-- Add more cards as needed -->
-    <MusicSample />
+    <MusicTrack
+      trackTitle="Demo Track"
+      trackSrc="/music/manuven_theme.mp3"
+      trackType="audio/mp3"
+      bgImageUrl="/images/stylised_music_notes_bg.png"
+    />
+
     <ContactFooter />
   </v-container>
 </template>

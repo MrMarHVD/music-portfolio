@@ -11,7 +11,7 @@ const backgroundUrl = new URL('@/assets/images/background/Notes_background.jpg1'
   <v-container>
     <v-card class="musicNoteBG">
       <v-card-text class="center-content">
-        <h1>Welcome!</h1>
+        <h1 class="header-background">Welcome!</h1>
         <v-img id="meImage" :src="meImageUrl" alt=""></v-img>
       </v-card-text>
 

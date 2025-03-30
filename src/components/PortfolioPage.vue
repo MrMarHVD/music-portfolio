@@ -35,11 +35,13 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
         trackTitle="Pub"
         trackSrc="/music/pub.mp3"
         trackType="audio/flac"
+        bgImageUrl="/images/pub_bg.png"
     />
     <MusicTrack
         trackTitle="Night Ambience"
         trackSrc="/music/GoY_Forest_Night.flac"
         trackType="audio/flac"
+        bgImageUrl="/images/dark_forest_bg.png"
     />
     <v-divider class="custom-divider"></v-divider>
 <!--    <ProjectOverview
@@ -61,6 +63,7 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
         trackTitle="Maple Forest Walk"
         trackSrc="/music/Maple_Forest_Walk.mp3"
         trackType="audio/mp3"
+        bgImageUrl="/images/maple_forest_walk_bg.png"
     />
 
     <MusicTrackWithInfo
@@ -75,6 +78,7 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
           trackTitle="Four Noble Truths"
           trackSrc="/music/four_noble_truths.mp3"
           trackType="audio/mp3"
+          bgImageUrl="/images/four_noble_truths_bg.png"
       />
 
     </v-container>

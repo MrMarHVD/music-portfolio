@@ -8,13 +8,10 @@ import '@/assets/global.css'
   <v-container>
     <v-divider></v-divider>
   <v-container class="social-media-links">
-    <v-btn class="social-btn" icon href="https://youtube.com" target="_blank">
+    <v-btn class="social-btn" icon href="https://www.youtube.com/@DetectiveMar" target="_blank">
       <v-icon color="red" size="50"> mdi-youtube</v-icon>
     </v-btn>
-    <v-btn class="social-btn" icon href="https://linkedin.com" target="_blank">
-      <v-icon color="blue" size="50">mdi-linkedin</v-icon>
-    </v-btn>
-    <v-btn class="social-btn" icon href="https://soundcloud.com" target="_blank">
+    <v-btn class="social-btn" icon href="https://soundcloud.com/themrmar" target="_blank">
       <v-icon color="orange" size="50" >mdi-soundcloud</v-icon>
     </v-btn>
 

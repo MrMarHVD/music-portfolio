@@ -43,7 +43,9 @@ const cardStyle = computed(() => {
             style="display: flex; flex-direction: row; align-items: center; justify-content: center;"
         >
           <v-container class="medium-padding marginRight" style="flex: 1;">
-            <h2>{{ trackTitle }}</h2>
+            <v-card-text>
+            <h2 class="header-background">{{ trackTitle }}</h2>
+            </v-card-text>
             <audio controls class="custom-audio-small">
               <source :src="resolvedTrackSrc" :type="trackType" />
               Your browser does not support the audio element.
@@ -83,7 +85,7 @@ const cardStyle = computed(() => {
   background: var(--bg-image, none);
   background-size: cover;
   background-position: center;
-  opacity: 0.2;       /* Adjust opacity as desired */
+  opacity: 1;       /* Adjust opacity as desired */
   z-index: -2;
 }
 

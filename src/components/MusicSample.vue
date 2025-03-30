@@ -24,7 +24,7 @@ const soundFiles = [
     <v-container class="lotsOfPadding center-content">
       <h2>Music Sample</h2>
       <audio controls class="custom-audio">
-        <source src="@/assets/music/Maple_Forest_Walk.flac" type="audio/flac" />
+        <source src="/music/Demo_track.mp3" type="audio/flac" />
         Your browser does not support the audio element.
       </audio>
     </v-container>

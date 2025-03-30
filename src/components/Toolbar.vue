@@ -3,7 +3,7 @@
   </script>
 
   <template>
-    <v-toolbar class="toolbar" color="lightgrey">
+    <v-toolbar class="toolbar" color="dark-grey">
       <div class="tabs-wrapper">
         <v-tabs class="tabs-container">
           <router-link to="/" class="tab-link">

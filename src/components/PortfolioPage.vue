@@ -26,19 +26,19 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
     /> -->
     <GhostOfYou />
    <MusicTrack
-       trackTitle="Purgatory_daytime"
-       trackSrc="/music/Maple_Forest_Walk.flac"
+       trackTitle="Lobby"
+       trackSrc="/music/purgatory_day.mp3"
        trackType="audio/flac"
        bgImageUrl="/images/purgatorylobby.jpeg"
    />
     <MusicTrack
-        trackTitle="My Custom Music Track"
-        trackSrc="/music/Maple_Forest_Walk.flac"
+        trackTitle="Pub"
+        trackSrc="/music/pub.mp3"
         trackType="audio/flac"
     />
     <MusicTrack
-        trackTitle="My Custom Music Track"
-        trackSrc="/music/Maple_Forest_Walk.flac"
+        trackTitle="Night Ambience"
+        trackSrc="/music/GoY_Forest_Night.flac"
         trackType="audio/flac"
     />
     <v-divider class="custom-divider"></v-divider>
@@ -58,18 +58,18 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
     <v-container class="bordered-container">
 
     <MusicTrack
-        trackTitle="My Custom Music Track"
+        trackTitle="Maple Forest Walk"
         trackSrc="/music/Maple_Forest_Walk.flac"
         trackType="audio/flac"
     />
     <MusicTrack
-        trackTitle="My Custom Music Track"
-        trackSrc="/music/Maple_Forest_Walk.flac"
-        trackType="audio/flac"
+        trackTitle="Four Noble Truths"
+        trackSrc="/music/four_noble_truths.mp3"
+        trackType="audio/mp3"
     />
     <MusicTrackWithInfo
-        trackTitle="Title"
-        trackSrc="/music/Maple_Forest_Walk.flac"
+        trackTitle="Unused Boss Music"
+        trackSrc="/music/Unused_boss_theme_remastered.flac"
         trackType="audio/flac"
         bgImageUrl="/images/purgatorylobby.jpeg"
         trackInfo="This is a bit of a wild one. I was just getting into using 8bit sounds in my music and wanted to create a boss theme. It's rather eccentric and very busy, but not my worst work."
@@ -93,8 +93,8 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
           trackType="audio/flac"
       />
       <MusicTrackWithInfo
-          trackTitle="Title"
-          trackSrc="/music/Maple_Forest_Walk.flac"
+          trackTitle="Unused Boss Theme"
+          trackSrc="/music/Unused_boss_theme_remastered.flac"
           trackType="audio/flac"
           bgImageUrl="/images/purgatorylobby.jpeg"
           trackInfo="This is a bit of a wild one. I was just getting into using 8bit sounds in my music and wanted to create a boss theme. It's rather eccentric and very busy, but not my worst work."

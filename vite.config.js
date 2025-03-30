@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from 'node:url'
    import vueDevTools from 'vite-plugin-vue-devtools'
 
    export default defineConfig({
-     base: '/music-portfolio/', // Add this line
+     base: '/music-portfolio/', // Ensure this line is correct
      plugins: [
        vue(),
        vueDevTools(),

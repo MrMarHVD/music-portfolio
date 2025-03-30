@@ -70,7 +70,7 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
         trackTitle="Path to Damnaw"
         trackSrc="/music/Path_to_Damnaw.mp3"
         trackType="audio/mp3"
-        bgImageUrl="/images/purgatorylobby.jpeg"
+        bgImageUrl="/images/path_to_damnaw_bg.png"
         trackInfo="If you're wondering what the title means, it's a reference to a fictional country. I made this track as part of a Dungeons and Dragons campaign I ran (still running, actually)."
     />
 
@@ -93,18 +93,20 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
           trackTitle="Wandering Skies"
           trackSrc="/music/wandering_skies.mp3"
           trackType="audio/mp3"
+          bgImageUrl="/images/wandering_skies_bg.png"
       />
       <MusicTrackWithInfo
           trackTitle="Sunset in the Ether"
           trackSrc="/music/sunset_in_the_ether.flac"
           trackType="audio/flac"
           trackInfo="This one doesn't just use soundfonts and 8bit stuff. It uses a bit of everything really, but I feel like it fits in here. I have no idea what genre it is, so let me know if it reminds you of anything."
+          bgImageUrl="/images/sunset_in_the_ether_bg.png"
       />
       <MusicTrackWithInfo
           trackTitle="Unused Boss Theme"
           trackSrc="/music/Unused_boss_theme_remastered.flac"
           trackType="audio/flac"
-          bgImageUrl="/images/purgatorylobby.jpeg"
+          bgImageUrl="/images/unused_boss_theme_bg.png"
           trackInfo="This is a bit of a wild one. I was just getting into using 8bit sounds in my music and wanted to create a boss theme. It's rather eccentric and very busy, but not my worst work."
       />
 
@@ -122,7 +124,7 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
           trackTitle="Fiat Lux"
           trackSrc="/music/Fiat_Lux.mp3"
           trackType="audio/mp3"
-          bgImageUrl="/images/purgatorylobby.jpeg"
+          bgImageUrl="/images/fiat_lux_bg.png"
           trackInfo="This one is based on an idea, namely the quote 'Let there be light,' as supposedly spoken by God. I tried to imagine what that would sound like, and this is the result."
       />
 
@@ -130,11 +132,13 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
           trackTitle="Changing Heart"
           trackSrc="/music/changing_heart.flac"
           trackType="audio/flac"
+          bgImageUrl="/images/changing_heart_bg.png"
       />
       <MusicTrack
           trackTitle="Hypnagogia"
           trackSrc="/music/hypnagogia.flac"
           trackType="audio/flac"
+          bgImageUrl="/images/hypnagogia_bg.png"
       />
 
     </v-container>

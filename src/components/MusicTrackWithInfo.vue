@@ -70,7 +70,7 @@ function onEnded() {
               Your browser does not support the audio element.
             </audio>
           </v-container>
-          <v-container class="medium-padding whiteBackground " style="flex: 1; text-align: left;">
+          <v-container class="medium-padding whiteBackground bordered-container " style="flex: 1; text-align: left;">
             <small-text>{{ trackInfo }}</small-text>
           </v-container>
         </v-card-text>
@@ -126,6 +126,10 @@ function onEnded() {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.bordered-container {
+  border-left: 2px solid black; /* Add vertical border */
 }
 
 /* Styling for the header */

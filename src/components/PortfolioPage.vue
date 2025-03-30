@@ -59,21 +59,23 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
 
     <MusicTrack
         trackTitle="Maple Forest Walk"
-        trackSrc="/music/Maple_Forest_Walk.flac"
-        trackType="audio/flac"
-    />
-    <MusicTrack
-        trackTitle="Four Noble Truths"
-        trackSrc="/music/four_noble_truths.mp3"
+        trackSrc="/music/Maple_Forest_Walk.mp3"
         trackType="audio/mp3"
     />
+
     <MusicTrackWithInfo
-        trackTitle="Unused Boss Music"
-        trackSrc="/music/Unused_boss_theme_remastered.flac"
-        trackType="audio/flac"
+        trackTitle="Path to Damnaw"
+        trackSrc="/music/Path_to_Damnaw.mp3"
+        trackType="audio/mp3"
         bgImageUrl="/images/purgatorylobby.jpeg"
-        trackInfo="This is a bit of a wild one. I was just getting into using 8bit sounds in my music and wanted to create a boss theme. It's rather eccentric and very busy, but not my worst work."
+        trackInfo="If you're wondering what the title means, it's a reference to a fictional country. I made this track as part of a Dungeons and Dragons campaign I ran (still running, actually)."
     />
+
+      <MusicTrack
+          trackTitle="Four Noble Truths"
+          trackSrc="/music/four_noble_truths.mp3"
+          trackType="audio/mp3"
+      />
 
     </v-container>
 
@@ -82,15 +84,17 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
     </v-card-text>
     <v-container class="bordered-container">
 
+
       <MusicTrack
-          trackTitle="My Custom Music Track"
-          trackSrc="/music/Maple_Forest_Walk.flac"
-          trackType="audio/flac"
+          trackTitle="Wandering Skies"
+          trackSrc="/music/wandering_skies.mp3"
+          trackType="audio/mp3"
       />
-      <MusicTrack
-          trackTitle="My Custom Music Track"
-          trackSrc="/music/Maple_Forest_Walk.flac"
+      <MusicTrackWithInfo
+          trackTitle="Sunset in the Ether"
+          trackSrc="/music/sunset_in_the_ether.flac"
           trackType="audio/flac"
+          trackInfo="This one doesn't just use soundfonts and 8bit stuff. It uses a bit of everything really, but I feel like it fits in here. I have no idea what genre it is, so let me know if it reminds you of anything."
       />
       <MusicTrackWithInfo
           trackTitle="Unused Boss Theme"
@@ -112,15 +116,20 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
 
       <MusicTrackWithInfo
           trackTitle="Fiat Lux"
-          trackSrc="/music/Maple_Forest_Walk.flac"
-          trackType="audio/flac"
+          trackSrc="/music/Fiat_Lux.mp3"
+          trackType="audio/mp3"
           bgImageUrl="/images/purgatorylobby.jpeg"
           trackInfo="This one is based on an idea, namely the quote 'Let there be light,' as supposedly spoken by God. I tried to imagine what that would sound like, and this is the result."
       />
 
       <MusicTrack
           trackTitle="Changing Heart"
-          trackSrc="/music/Maple_Forest_Walk.flac"
+          trackSrc="/music/changing_heart.flac"
+          trackType="audio/flac"
+      />
+      <MusicTrack
+          trackTitle="Hypnagogia"
+          trackSrc="/music/hypnagogia.flac"
           trackType="audio/flac"
       />
 

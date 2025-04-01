@@ -10,9 +10,10 @@
   <template>
     <div class="mainContainer" >
       <Toolbar class="fixed-toolbar" />
-      <div class="scrollable-content">
-     <!--   <MainPage /> -->
-       <router-view />
+      <div class="scrollable-wrapper">
+        <div class="main-content-container">
+          <router-view />
+        </div>
       </div>
 
     </div>
@@ -30,6 +31,21 @@
     background-image: url(@/assets/images/background/background1.webp);
     background-size: cover;
     align-items: center;
+  }
+
+  .scrollable-wrapper {
+    width: 100%;
+    height: calc(100vh - 64px);
+    overflow-y: auto;
+    margin-top: 64px;
+  }
+
+  .main-content-container {
+    width: 100%;
+    overflow-y: auto;
+    margin: 0 auto;
+    max-width: 60vw;
+
   }
 
   .fullWidthContainer {

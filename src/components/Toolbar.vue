@@ -25,8 +25,7 @@
 
   <style scoped>
   .toolbar {
-    border-bottom: 10px;
-    border-color: black;
+    border-bottom: 2px solid black;
   }
 
   .tabs-wrapper {

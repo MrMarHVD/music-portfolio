@@ -6,16 +6,16 @@
     <v-toolbar class="toolbar" color="dark-grey">
       <div class="tabs-wrapper">
         <v-tabs class="tabs-container">
-          <router-link to="/" class="tab-link">
+          <router-link to="/music-portfolio/" class="tab-link">
             <v-tab class="flex-tab">Home</v-tab>
           </router-link>
-          <router-link to="/portfolio" class="tab-link">
+          <router-link to="/music-portfolio/portfolio" class="tab-link">
             <v-tab class="flex-tab">Portfolio</v-tab>
           </router-link>
           <!-- <router-link to="/about" class="tab-link">
             <v-tab class="flex-tab">About</v-tab>
           </router-link>  -->
-          <router-link to="/contact" class="tab-link">
+          <router-link to="/music-portfolio/contact" class="tab-link">
             <v-tab class="flex-tab">Contact</v-tab>
           </router-link>
         </v-tabs>

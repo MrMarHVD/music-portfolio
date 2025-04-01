@@ -6,22 +6,22 @@ import AboutPage from '@/components/AboutPage.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/music-portfolio',
     name: 'Home',
     component: MainPage
   },
   {
-    path: '/portfolio',
+    path: '/music-portfolio/portfolio',
     name: 'Portfolio',
     component: PortfolioPage
   },
   {
-    path: '/about',
+    path: '/music-portfolio/about',
     name: 'About',
     component: AboutPage
   },
   {
-    path: '/contact',
+    path: '/music-portfolio/contact',
     name: 'Contact',
     component: ContactPage
   }

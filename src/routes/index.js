@@ -24,6 +24,10 @@ const routes = [
     path: '/music-portfolio/contact',
     name: 'Contact',
     component: ContactPage
+  },
+  {
+    path: '/',
+    redirect: '/music-portfolio'
   }
 ]
 

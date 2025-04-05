@@ -24,6 +24,8 @@
   <style scoped>
   /* Add any styles if needed */
 
+
+
   .mainContainer {
     display: flex;
     flex-direction: column;
@@ -44,8 +46,18 @@
     width: 100%;
     overflow-y: auto;
     margin: 0 auto;
-    max-width: 60vw;
+    max-width: 64vw;
 
+  }
+
+  /* Mobile breakpoint */
+  /* Portrait orientation - when screen is taller than it is wide */
+  @media (max-aspect-ratio: 1/1) {
+    .main-content-container {
+      max-width: 100vw;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
 
   .fullWidthContainer {

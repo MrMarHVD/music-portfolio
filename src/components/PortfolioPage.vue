@@ -5,7 +5,7 @@ import MusicSample from './MusicSample.vue'
 import ContactFooter from './ContactFooter.vue'
 import '@/assets/global.css'
 import ProjectOverview from './ProjectOverview.vue'
-import GhostOfYou from './GhostOfYou.vue'
+import ProjectSection from './ProjectSection.vue'
 import MusicTrack from './MusicTrack.vue'
 import MusicTrackWithInfo from "@/components/MusicTrackWithInfo.vue";
 import OtherWork from './OtherWork.vue'
@@ -24,7 +24,12 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
         :musicTracks="[]"
         foregroundImageUrl="@/assets/images/other/tumtumworlds.jpg"
     /> -->
-    <GhostOfYou />
+    <ProjectSection 
+        :headerText="'Ghost of You'"
+        :contentText="'The only collaborative project I\'m working on at the moment is called Ghost of You. It\'s a visual novel, and part of the score is mostly done already. Some of the tracks are provided below.'"
+        :imageUrl="'@/assets/images/other/tumtumworlds.jpg'"
+        :imageAlt="'Ghost of You project image'"
+    />
    <MusicTrack
        trackTitle="Lobby"
        trackSrc="/music/purgatory_day.mp3"

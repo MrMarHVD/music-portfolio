@@ -26,7 +26,7 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
     /> -->
     <ProjectSection 
         :headerText="'Ghost of You'"
-        :contentText="'The only collaborative project I\'m working on at the moment is called Ghost of You. It\'s a visual novel, and part of the score is mostly done already. Some of the tracks are provided below.'"
+        :contentText="'One of the collaborative projects I\'ve worked on is called Ghost of You. It\'s a visual novel, and part of the score is mostly done already. Some of the tracks are provided below.'"
         :imageUrl="'@/assets/images/other/tumtumworlds.jpg'"
         :imageAlt="'Ghost of You project image'"
     />

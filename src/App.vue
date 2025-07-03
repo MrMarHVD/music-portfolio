@@ -4,70 +4,65 @@
   import '@/assets/images/background/background1.webp'
   import ContactFooter from "@/components/ContactFooter.vue";
   import { VContainer, VCard } from 'vuetify/components'
+ﬁ  import { useDevice } from './composables/useDevice.js'
+  import { computed } from 'vue'
 
-  </script>
+  const { isMobile } = useDevice()
 
-  <template>
-    <div class="mainContainer" >
-      <Toolbar class="fixed-toolbar" />
-      <div class="scrollable-wrapper">
-        <div class="main-content-container">
-          <router-view />
-        </div>
+  const contentContainerStyle = computed(() => ({
+    maxWidth: isMobile.value ? '98vw' : '64vw'
+  }))
+</script>
+
+<template>
+  <div class="mainContainer" >
+    <Toolbar class="fixed-toolbar" />
+    <div class="scrollable-wrapper">
+      <div class="main-content-container" :style="contentContainerStyle">
+        <router-view />
       </div>
-
     </div>
 
-
-  </template>
-
-  <style scoped>
-  /* Add any styles if needed */
+  </div>
 
 
+</template>
 
-  .mainContainer {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-image: url(@/assets/images/background/background1.webp);
-    background-size: cover;
-    align-items: center;
-  }
+<style scoped>
+/* Add any styles if needed */
 
-  .scrollable-wrapper {
-    width: 100%;
-    height: calc(100vh - 64px);
-    overflow-y: auto;
-    margin-top: 64px;
-  }
 
-  .main-content-container {
-    width: 100%;
-    overflow-y: auto;
-    margin: 0 auto;
-    max-width: 64vw;
 
-  }
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(@/assets/images/background/background1.webp);
+  background-size: cover;
+  align-items: center;
+}
 
-  /* Mobile breakpoint */
-  /* Portrait orientation - when screen is taller than it is wide */
-  @media (max-aspect-ratio: 1/1) {
-    .main-content-container {
-      max-width: 100vw;
-      padding-left: 16px;
-      padding-right: 16px;
-    }
-  }
+.scrollable-wrapper {
+  width: 100%;
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+  margin-top: 64px;
+}
 
-  .fullWidthContainer {
-    width: 5000px;
-  }
+.main-content-container {
+  width: 100%;
+  overflow-y: auto;
+  margin: 0 auto;
+}
 
-  .fixed-toolbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure it stays above other content */
-  }
-  </style>
+.fullWidthContainer {
+  width: 5000px;
+}
+
+.fixed-toolbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+</style>

@@ -17,9 +17,9 @@ const backgroundUrl = new URL('@/assets/images/background/Notes_background.jpg1'
 
       <v-card-text class="centered">
         <div class="info-box" id="ghostOfYouIntro">
-          <body>
+          <p class="body-text">
             The only collaborative project I'm working on at the moment is called Ghost of You. It's a visual novel, and part of the score is mostly done already. Some of the tracks are provided below.
-          </body>
+          </p>
         </div>
       </v-card-text>
     </v-card>

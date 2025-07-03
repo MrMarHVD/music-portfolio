@@ -4,7 +4,8 @@
   import '@/assets/images/background/background1.webp'
   import ContactFooter from "@/components/ContactFooter.vue";
   import { VContainer, VCard } from 'vuetify/components'
-ﬁ  import { useDevice } from './composables/useDevice.js'
+  import { useDevice } from './composables/useDevice.js'
+  
   import { computed } from 'vue'
 
   const { isMobile } = useDevice()
@@ -12,10 +13,14 @@
   const contentContainerStyle = computed(() => ({
     maxWidth: isMobile.value ? '98vw' : '64vw'
   }))
+
+  const fontClass = computed(() => 
+    isMobile.value ? 'mobile-fonts' : 'desktop-fonts'
+  )
 </script>
 
 <template>
-  <div class="mainContainer" >
+  <div class="mainContainer" :class="fontClass">
     <Toolbar class="fixed-toolbar" />
     <div class="scrollable-wrapper">
       <div class="main-content-container" :style="contentContainerStyle">

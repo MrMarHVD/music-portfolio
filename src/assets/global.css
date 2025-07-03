@@ -1,10 +1,91 @@
+/* =================================================================
+   RESPONSIVE FONT SYSTEM
+   Uses conditional classes applied at App.vue level
+   ================================================================= */
 
+/* Desktop Font Classes */
+.desktop-fonts body,
+.desktop-fonts .body-text {
+  font-family: Academico;
+  font-size: 20pt;
+}
 
+.desktop-fonts h1 {
+  font-family: Inter;
+  font-size: 50pt;
+}
+
+.desktop-fonts h2 {
+  margin-bottom: 16px;
+  font-size: 45pt;
+  font-family: Inter;
+  font-weight: bolder;
+}
+
+.desktop-fonts h3 {
+  font-size: 30pt;
+  font-family: Academico;
+  font-weight: bold;
+}
+
+.desktop-fonts .small-text {
+  font-size: 15pt;
+}
+
+/* Mobile Font Classes */
+.mobile-fonts body,
+.mobile-fonts .body-text {
+  font-family: Academico;
+  font-size: 16pt;
+}
+
+.mobile-fonts h1 {
+  font-family: Inter;
+  font-size: 32pt;
+}
+
+.mobile-fonts h2 {
+  margin-bottom: 12px;
+  font-size: 28pt;
+  font-family: Inter;
+  font-weight: bolder;
+}
+
+.mobile-fonts h3 {
+  font-size: 20pt;
+  font-family: Academico;
+  font-weight: bold;
+}
+
+.mobile-fonts .small-text {
+  font-size: 12pt;
+}
+
+/* Input Field Font Classes */
+.desktop-fonts .email-field input {
+  font-size: 26pt !important;
+}
+
+.desktop-fonts .email-field label {
+  font-size: 15pt !important;
+}
+
+.mobile-fonts .email-field input {
+  font-size: 18pt !important;
+}
+
+.mobile-fonts .email-field label {
+  font-size: 12pt !important;
+}
+
+/* =================================================================
+   EXISTING UTILITY CLASSES (unchanged)
+   ================================================================= */
 
 .custom-audio {
   width: 50%;             /* Fill the container */
   max-width: 50vw;         /* Preferably 50vw when possible */
-  min-width: 25vw;         /* Don’t go below 25vw when the container shrinks */
+  min-width: 25vw;         /* Don't go below 25vw when the container shrinks */
   transform: scale(1.5);   /* Preserve your transform */
   transform-origin: center; /* Keep the scaling centered */
   margin: 0 auto;
@@ -13,6 +94,7 @@
   border-radius: 4px;
   padding: 5px;
 }
+
 .custom-audio-small {
   width: 22vw;
   transform: scale(1.2);
@@ -34,14 +116,21 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 20pt;
+}
 
- }
+/* Override info-box font size with conditional classes */
+.desktop-fonts .info-box {
+  font-size: 20pt;
+}
+
+.mobile-fonts .info-box {
+  font-size: 16pt;
+}
 
 .custom-divider {
   border-top: 5px solid black; /* Change the color and thickness */
   margin: 20px 0; /* Add some margin */
 }
-
 
 .lotsOfPadding {
   padding-bottom: 70px;
@@ -57,7 +146,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-
 }
 
 .backdrop {
@@ -70,7 +158,6 @@
 .standard-header {
   border-width: 1px;
   border-color: black;
-
 }
 
 .header-background {
@@ -79,40 +166,12 @@
   border-radius: 5px;
 }
 
-h1 {
-  font-family: Inter;
-  font-size: 50pt;
-}
-
-h2 {
-  margin-bottom: 16px;
-  font-size: 45pt;
-  font-family: Inter;
-  font-weight: bolder;
-}
-
-h3 {
-  font-size: 30pt;
-  font-family: Academico;
-  font-weight: bold;
-}
-
-body {
-  font-family: Academico;
-  font-size: 20pt;
-}
-
-small-text {
-  font-size: 15pt;
-}
-
 .scrollable-content {
   flex: 1;
   width: 100%;
   overflow-y: auto;
   margin-top: 64px; /* Adjust this value to match the height of your toolbar */
   max-width: 60vw;
-
 }
 
 v-card {

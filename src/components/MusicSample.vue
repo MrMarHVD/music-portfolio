@@ -37,8 +37,6 @@ const soundFiles = [
 
 h2 {
   margin-bottom: 16px;
-  font-size: 25pt;
-  font-family: Trattatello;
 }
 
 

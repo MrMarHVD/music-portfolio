@@ -14,9 +14,9 @@ const backgroundUrl = new URL('@/assets/images/background/Notes_background.jpg1'
 
       <v-card-text class="centered">
         <div class="info-box" id="less-wide">
-          <body>
+          <p class="body-text">
            I can compose in a wide variety of different styles and genres beyond what Ghost of You required. So if you feel the tracks above don't suit your project, here's a collection of other tracks in various styles which I've made over the years.
-          </body>
+          </p>
         </div>
       </v-card-text>
     </v-card>

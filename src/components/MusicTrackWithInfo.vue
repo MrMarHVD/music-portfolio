@@ -71,7 +71,7 @@ function onEnded() {
             </audio>
           </v-container>
           <v-container class="medium-padding whiteBackground bordered-container " style="flex: 1; text-align: left;">
-            <small-text>{{ trackInfo }}</small-text>
+            <p class="small-text">{{ trackInfo }}</p>
           </v-container>
         </v-card-text>
       </v-card>
@@ -132,10 +132,8 @@ function onEnded() {
   border-left: 2px solid black; /* Add vertical border */
 }
 
-/* Styling for the header */
+/* Styling for the header - fonts now handled by global conditional classes */
 h2 {
   margin-bottom: 16px;
-  font-size: 25pt;
-  font-family: Inter;
 }
 </style>

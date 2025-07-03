@@ -45,9 +45,9 @@ const backgroundUrl = new URL('@/assets/images/background/Notes_background.jpg',
 
       <v-card-text class="centered">
         <div class="info-box project-intro">
-          <body>
+          <p class="body-text">
             {{ contentText }}
-          </body>
+          </p>
         </div>
       </v-card-text>
     </v-card>

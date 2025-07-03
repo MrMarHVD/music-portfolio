@@ -115,11 +115,9 @@ function onEnded() {
   justify-content: center;
 }
 
-/* Styling for the header */
+/* Styling for the header - fonts now handled by global conditional classes */
 h2 {
   margin-bottom: 16px;
-  font-size: 25pt;
-  font-family: Inter;
 }
 
 

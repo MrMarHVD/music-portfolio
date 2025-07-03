@@ -20,9 +20,9 @@ const backgroundUrl = new URL('@/assets/images/background/Notes_background.jpg1'
 
       <v-card-text>
         <div class="info-box">
-          <p> My name is Howard, but online I go by the name MrMar. I've been composing for quite a while now, and have worked with a lot of different styles and tools over the years, but recently I've gotten especially into orchestral composition.
+          <p class="body-text"> My name is Howard, but online I go by the name MrMar. I've been composing for quite a while now, and have worked with a lot of different styles and tools over the years, but recently I've gotten especially into orchestral composition.
             </p>
-          <p>
+          <p class="body-text">
             I take inspiration from a lot of different places, but for me the greatest source has always been video games and their soundtracks. Games which I know have inspired me include Skyrim, Super Mario Galaxy, Breath of the Wild, and Undertale. If you have a game project that's remotely in the ballpark of any of those, then that's already more than good enough to be exciting to me, so hit me up via the contact page in that case! </p>
         </div>
       </v-card-text>

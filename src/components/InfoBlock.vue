@@ -36,7 +36,7 @@ const cardStyle = computed(() => {
 
       <v-card-text>
         <div class="info-box">
-          <body> {{ textContent }} ☝</body>️
+          <p class="body-text"> {{ textContent }} ☝</p>️
         </div>
       </v-card-text>
     </v-card>

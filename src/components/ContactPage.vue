@@ -20,7 +20,7 @@ const copyDiscordtoClipboard = () => {
   <v-container class="contact-container">
     <h1 class="contact-header">Contact me</h1>
     <v-card class="contact-card">
-      <body>If you think you might want to work with me on a project, send me an email or hit me up on Discord!</body>
+      <p class="body-text">If you think you might want to work with me on a project, send me an email or hit me up on Discord!</p>
     </v-card>
     <v-card class="contact-card">
       <v-card-text class="email-card">
@@ -94,14 +94,13 @@ const copyDiscordtoClipboard = () => {
   align-items: center;
 }
 
-/* Increase the font size of the inner input */
+/* Input field styling - font sizes now handled by global conditional classes */
 ::v-deep .email-field input {
-  font-size: 26pt !important;
   align-items: center;
 }
 
-/* Optionally, adjust the label font size if needed */
+/* Label styling - font sizes now handled by global conditional classes */
 ::v-deep .email-field label {
-  font-size: 15pt !important;
+  /* No additional styling needed */
 }
 </style>

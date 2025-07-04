@@ -171,6 +171,7 @@ function onEnded() {
 .desktop-layout .text-container {
   background-color: white;
   border-left: 2px solid black;
+  border-radius: 12px;
 }
 
 /* Mobile text container gets subtle background */

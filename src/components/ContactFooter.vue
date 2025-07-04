@@ -2,17 +2,33 @@
 import { VContainer, VBtn, VIcon, VDivider } from 'vuetify/components'
 import '@mdi/font/css/materialdesignicons.css'
 import '@/assets/global.css'
+import { useDevice } from '@/composables/useDevice.js'
+import { computed } from 'vue'
+
+const { isMobile } = useDevice()
+
+const iconSize = computed(() => 
+  isMobile.value ? 30 : 50
+)
+
+const buttonClass = computed(() => 
+  isMobile.value ? 'social-btn-mobile' : 'social-btn-desktop'
+)
+
+const containerClass = computed(() => 
+  isMobile.value ? 'social-links-mobile' : 'social-links-desktop'
+)
 </script>
 
 <template>
   <v-container>
     <v-divider></v-divider>
-  <v-container class="social-media-links">
-    <v-btn class="social-btn" icon href="https://www.youtube.com/@DetectiveMar" target="_blank">
-      <v-icon color="red" size="50"> mdi-youtube</v-icon>
+  <v-container :class="['social-media-links', containerClass]">
+    <v-btn :class="['social-btn', buttonClass]" icon href="https://www.youtube.com/@DetectiveMar" target="_blank">
+      <v-icon color="red" :size="iconSize"> mdi-youtube</v-icon>
     </v-btn>
-    <v-btn class="social-btn" icon href="https://soundcloud.com/themrmar" target="_blank">
-      <v-icon color="orange" size="50" >mdi-soundcloud</v-icon>
+    <v-btn :class="['social-btn', buttonClass]" icon href="https://soundcloud.com/themrmar" target="_blank">
+      <v-icon color="orange" :size="iconSize" >mdi-soundcloud</v-icon>
     </v-btn>
 
   </v-container>
@@ -23,11 +39,17 @@ import '@/assets/global.css'
 .social-media-links {
   display: flex;
   justify-content: center;
+}
+
+.social-links-desktop {
   gap: 50px;
 }
+
+.social-links-mobile {
+  gap: 20px;
+}
+
 .social-btn {
-  width: 10vw;
-  height: 3vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,5 +57,15 @@ import '@/assets/global.css'
   background-color: white;
 }
 
+.social-btn-desktop {
+  width: 10vw;
+  height: 3vw;
+  min-width: 80px;
+  min-height: 40px;
+}
 
+.social-btn-mobile {
+  width: 60px;
+  height: 60px;
+}
 </style>

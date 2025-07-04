@@ -61,7 +61,7 @@ const copyDiscordtoClipboard = () => {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 93vh;
+  height: 110vh;
   /*background-image: url('@/assets/images/background/Notes_background.jpg');
   background-size: cover;
   background-position: center; */

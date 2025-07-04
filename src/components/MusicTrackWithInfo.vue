@@ -2,6 +2,7 @@
 import { defineProps, computed, ref } from 'vue'
 import { VCard, VCardText, VContainer } from 'vuetify/components'
 import '@/assets/global.css'
+import { useDevice } from '@/composables/useDevice.js'
 
 const props = defineProps({
   trackTitle: { type: String, required: true },
@@ -12,6 +13,8 @@ const props = defineProps({
   // New prop for the additional text information
   trackInfo: { type: String, default: '' }
 })
+
+const { isMobile } = useDevice()
 
 const isPlaying = ref(false);
 
@@ -35,6 +38,20 @@ const cardStyle = computed(() => {
       : {}
 })
 
+// Responsive layout classes
+const layoutDirection = computed(() => 
+  isMobile.value ? 'mobile-layout' : 'desktop-layout'
+)
+
+const contentClass = computed(() => 
+  isMobile.value ? 'content-mobile' : 'content-desktop'
+)
+
+// Responsive audio player class
+const audioClass = computed(() => 
+  isMobile.value ? 'custom-audio' : 'custom-audio-small'
+)
+
 function onPlay() {
   isPlaying.value = true;
 }
@@ -52,17 +69,14 @@ function onEnded() {
   <div class="marginContainer">
     <v-container>
       <v-card class="musicCard" :style="cardStyle">
-        <v-card-text
-            class="center-content"
-            style="display: flex; flex-direction: row; align-items: center; justify-content: center;"
-        >
-          <v-container class="medium-padding marginRight" style="flex: 1;">
+        <v-card-text :class="['center-content', layoutDirection]">
+          <v-container :class="['medium-padding', contentClass]">
             <v-card-text>
             <h2 class="header-background">{{ trackTitle }}</h2>
             </v-card-text>
             <audio
               controls
-              class="custom-audio-small"
+              :class="audioClass"
               @play="onPlay"
               @pause="onPause"
               @ended="onEnded">
@@ -70,7 +84,7 @@ function onEnded() {
               Your browser does not support the audio element.
             </audio>
           </v-container>
-          <v-container class="medium-padding whiteBackground bordered-container " style="flex: 1; text-align: left;">
+          <v-container :class="['medium-padding', 'text-container', contentClass]">
             <p class="small-text">{{ trackInfo }}</p>
           </v-container>
         </v-card-text>
@@ -83,6 +97,7 @@ function onEnded() {
 .marginRight {
   margin-right: 30px;
 }
+
 .musicCard {
   position: relative; /* Create a positioning context for pseudo-elements */
   z-index: 0;         /* Ensure content appears above the pseudo-elements */
@@ -107,8 +122,8 @@ function onEnded() {
   z-index: -2;
 }
 
-/* ::after covers the right half of the card entirely with white */
-.musicCard::after {
+/* Desktop layout - right half white background */
+.desktop-layout .musicCard::after {
   content: "";
   position: absolute;
   top: 0;
@@ -119,17 +134,50 @@ function onEnded() {
   z-index: -1;
 }
 
-/* Relying on your global.css for these classes */
-.center-content {
-  /* This class is overridden in the template for row layout */
+/* Mobile layout - no right half white background */
+.mobile-layout .musicCard::after {
+  display: none;
+}
+
+/* Layout direction */
+.desktop-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-layout {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.bordered-container {
-  border-left: 2px solid black; /* Add vertical border */
+/* Content sizing */
+.content-desktop {
+  flex: 1;
+}
+
+.content-mobile {
+  width: 100%;
+}
+
+.text-container {
+  text-align: left;
+}
+
+/* Desktop text container gets white background and border */
+.desktop-layout .text-container {
+  background-color: white;
+  border-left: 2px solid black;
+}
+
+/* Mobile text container gets subtle background */
+.mobile-layout .text-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
 /* Styling for the header - fonts now handled by global conditional classes */

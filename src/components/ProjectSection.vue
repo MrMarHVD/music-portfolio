@@ -39,7 +39,7 @@ const backgroundUrl = new URL('@/assets/images/background/Notes_background.jpg',
   <v-container>
     <v-card class="musicNoteBG">
       <v-card-text class="center-content">
-        <h2 class="header-background">{{ headerText }}</h2>
+        <h1 class="header-background">{{ headerText }}</h1>
         <v-img class="project-image" :src="resolvedImageUrl" :alt="imageAlt"></v-img>
       </v-card-text>
 

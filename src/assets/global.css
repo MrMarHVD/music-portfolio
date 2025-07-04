@@ -30,6 +30,7 @@
 
 .desktop-fonts .small-text {
   font-size: 15pt;
+  font-family: Inter;
 }
 
 /* Mobile Font Classes */
@@ -41,18 +42,18 @@
 
 .mobile-fonts h1 {
   font-family: Inter;
-  font-size: 32pt;
+  font-size: 25pt;
 }
 
 .mobile-fonts h2 {
   margin-bottom: 12px;
-  font-size: 28pt;
+  font-size: 16pt;
   font-family: Inter;
   font-weight: bolder;
 }
 
 .mobile-fonts h3 {
-  font-size: 20pt;
+  font-size: 14pt;
   font-family: Academico;
   font-weight: bold;
 }

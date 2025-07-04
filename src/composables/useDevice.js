@@ -5,7 +5,7 @@ export function useDevice() {
   const isMobile = ref(false)
   
   const checkDevice = () => {
-    isMobile.value = window.innerWidth < 750
+    isMobile.value = window.innerWidth < 800
   }
   
   onMounted(() => {

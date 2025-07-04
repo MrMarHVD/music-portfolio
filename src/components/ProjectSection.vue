@@ -43,8 +43,8 @@ const backgroundUrl = new URL('@/assets/images/background/Notes_background.jpg',
         <v-img class="project-image" :src="resolvedImageUrl" :alt="imageAlt"></v-img>
       </v-card-text>
 
-      <v-card-text class="centered">
-        <div class="info-box project-intro">
+      <v-card-text>
+        <div class="info-box">
           <p class="body-text">
             {{ contentText }}
           </p>
@@ -61,21 +61,6 @@ h1 {
 
 v-text-field {
   width: 100%;
-}
-
-.centered {
-  display: flex;
-  align-items: center;
-  flex-display: column;
-  justify-content: center;
-}
-
-.project-intro {
-  width: 75%;
-  display: flex;
-  justify-content: center;
-  height: auto;
-  align-items: center;
 }
 
 .project-image {

@@ -22,7 +22,6 @@ const backgroundUrl = new URL('@/assets/images/background/Notes_background.jpg1'
     </v-card>
   </v-container>
 </template>
-
 <style scoped>
 h1 {
   margin-bottom: 16px;

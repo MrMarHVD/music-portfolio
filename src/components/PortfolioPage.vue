@@ -8,7 +8,6 @@ import ProjectOverview from './ProjectOverview.vue'
 import ProjectSection from './ProjectSection.vue'
 import MusicTrack from './MusicTrack.vue'
 import MusicTrackWithInfo from "@/components/MusicTrackWithInfo.vue";
-import OtherWork from './OtherWork.vue'
 import PortfolioHeader from "@/components/PortfolioHeader.vue";
 </script>
 
@@ -58,7 +57,12 @@ import PortfolioHeader from "@/components/PortfolioHeader.vue";
     <!-- Add more cards as needed -->
   </v-container>
   <v-container class="backdrop content-container">
-    <OtherWork />
+    <ProjectSection
+        :headerText="'Other Work'"
+        :contentText="'I can compose in a wide variety of different styles and genres beyond what Ghost of You required. So if you feel the tracks above don\'t suit your project, here\'s a collection of other tracks in various styles which I\'ve made over the years.'"
+        :imageUrl="'/images/stylised_music_notes_bg.png'"
+        :imageAlt="'Musical notes representing various composition styles'"
+    />
     <v-card-text class="center-content">
       <h3 class="header-background">Orchestral</h3>
     </v-card-text>

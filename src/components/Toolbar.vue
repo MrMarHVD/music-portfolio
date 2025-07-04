@@ -1,5 +1,13 @@
 <script setup>
   import { VToolbar, VTabs, VTab } from 'vuetify/components'
+  import { useDevice } from '@/composables/useDevice.js'
+  import { computed } from 'vue'
+
+  const { isMobile } = useDevice()
+
+  const tabClass = computed(() => 
+    isMobile.value ? 'flex-tab-mobile' : 'flex-tab-desktop'
+  )
   </script>
 
   <template>
@@ -7,16 +15,16 @@
       <div class="tabs-wrapper">
         <v-tabs class="tabs-container">
           <router-link to="/music-portfolio/" class="tab-link">
-            <v-tab class="flex-tab">Home</v-tab>
+            <v-tab :class="['flex-tab', tabClass]">Home</v-tab>
           </router-link>
           <router-link to="/music-portfolio/portfolio" class="tab-link">
-            <v-tab class="flex-tab">Portfolio</v-tab>
+            <v-tab :class="['flex-tab', tabClass]">Portfolio</v-tab>
           </router-link>
           <!-- <router-link to="/about" class="tab-link">
             <v-tab class="flex-tab">About</v-tab>
           </router-link>  -->
           <router-link to="/music-portfolio/contact" class="tab-link">
-            <v-tab class="flex-tab">Contact</v-tab>
+            <v-tab :class="['flex-tab', tabClass]">Contact</v-tab>
           </router-link>
         </v-tabs>
       </div>
@@ -48,8 +56,16 @@
     padding: 10px; /* Add padding inside each tab */
     border-radius: 1px; /* Optional: Add border radius for rounded corners */
     background-color: white; /* Optional: Change background color of tabs */
-    max-width: 10vw;
-    width: 10vw;
+  }
+
+  .flex-tab-desktop {
+    max-width: 12vw;
+    width: 12vw;
+  }
+
+  .flex-tab-mobile {
+    max-width: 30vw;
+    width: 30vw;
   }
 
   .tab-link {

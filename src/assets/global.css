@@ -12,18 +12,18 @@
 
 .desktop-fonts h1 {
   font-family: Inter;
-  font-size: 50pt;
+  font-size: 40pt;
 }
 
 .desktop-fonts h2 {
   margin-bottom: 16px;
-  font-size: 45pt;
+  font-size: 30pt;
   font-family: Inter;
   font-weight: bolder;
 }
 
 .desktop-fonts h3 {
-  font-size: 30pt;
+  font-size: 25pt;
   font-family: Academico;
   font-weight: bold;
 }
